@@ -1,0 +1,72 @@
+/**
+ * Here is some sample CSS code that I may or may not use;
+ *
+ * .row {
+ *    width: 100%;
+ *    max-width: 1200px;
+ *    margin: 0 auto;
+ * }
+ *
+ * .nav {
+ *  display: flex;
+ *  justify-content: space-between;
+ *  align-items: center;
+ * }
+ *
+ * Left width 40%, Right width 60%
+ * display: flex;
+ * flex-direction: column;
+ *
+ * .container {
+ *   padding: 80px 0;
+ * }
+ * reusable .row code
+ * .services {
+ *      display: flex;
+ *      flex-wrap: wrap;
+ * }
+ * .service {
+ *   display: flex;
+ *   width: calc(100%/3);
+ * }
+ * .service__description {
+ *   display: flex;
+ *   flex-direction: column;
+ * }
+ *
+ * reusable .row code
+ * Left width 50%, df, fd column. Right width 50%
+ *
+ * reusable .row code
+ * Left width 50%. Right width 50%, df, fd column.
+ * Individual itms df. Container width 50%, df, fd column. Text df, fd column.
+ *
+ * reusable .row code
+ * .plans {
+ *   display: flex;
+ *   flex-wrap: wrap;
+ * }
+ * .plan {
+ *   width: calc(100%/3);
+ *   display: flex;
+ *   flex-direction: column;
+ * }
+ *
+ * reusable .row code
+ * .links {
+ *   display: flex;
+ *   flex-wrap: wrap;
+ * }
+ * .link {
+ *   display: flex;
+ *   flex-direction: column;
+ *   width: calc(100%/5);
+ *   align-items: center;
+ * }
+ * .footer__info {
+ *   display: flex;
+ *   justify-content: space-between;
+ *   align-items: center;
+ * }
+ *
+ */
