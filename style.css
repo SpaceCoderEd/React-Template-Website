@@ -1,72 +1,163 @@
-/**
- * Here is some sample CSS code that I may or may not use;
- *
- * .row {
- *    width: 100%;
- *    max-width: 1200px;
- *    margin: 0 auto;
- * }
- *
- * .nav {
- *  display: flex;
- *  justify-content: space-between;
- *  align-items: center;
- * }
- *
- * Left width 40%, Right width 60%
- * display: flex;
- * flex-direction: column;
- *
- * .container {
- *   padding: 80px 0;
- * }
- * reusable .row code
- * .services {
- *      display: flex;
- *      flex-wrap: wrap;
- * }
- * .service {
- *   display: flex;
- *   width: calc(100%/3);
- * }
- * .service__description {
- *   display: flex;
- *   flex-direction: column;
- * }
- *
- * reusable .row code
- * Left width 50%, df, fd column. Right width 50%
- *
- * reusable .row code
- * Left width 50%. Right width 50%, df, fd column.
- * Individual itms df. Container width 50%, df, fd column. Text df, fd column.
- *
- * reusable .row code
- * .plans {
- *   display: flex;
- *   flex-wrap: wrap;
- * }
- * .plan {
- *   width: calc(100%/3);
- *   display: flex;
- *   flex-direction: column;
- * }
- *
- * reusable .row code
- * .links {
- *   display: flex;
- *   flex-wrap: wrap;
- * }
- * .link {
- *   display: flex;
- *   flex-direction: column;
- *   width: calc(100%/5);
- *   align-items: center;
- * }
- * .footer__info {
- *   display: flex;
- *   justify-content: space-between;
- *   align-items: center;
- * }
- *
- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    color: #243e63;
+}
+
+:root {
+    view-transition-name: root;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav {
+    padding-top: 32px;
+    display: flex;
+}
+
+
+/** REUSABLE CODE **/
+
+.container {
+    padding: 80px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/** NAV SECTION **/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding-bottom: 4px;
+}
+
+.nav__logo--wrapper {
+    display: flex;
+}
+
+.nav__logo--img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    margin: 0 24px;
+    transition: all 300ms;
+}
+
+.nav__link--primary {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: rgb(255, 95, 175);
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    display: none;
+    transition: all 300ms ease;
+}
+
+
+/** MENU SECTION **/
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 378px;
+    margin: 24px 16px;
+    padding: 32px;
+    background-color: #fff;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(300%);
+    transition: all 300ms ease;
+}
